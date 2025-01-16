@@ -16,13 +16,24 @@
 //Giriş: 1, 0, 2, 0, 3
 //Çıxış: 0, 0, 1, 2, 3
 
-//int[] arr = { 1, 0, 2, 0, 3 };
-
-//for (int i = 0; i < arr.Length; i++)
-//{
-//    if (arr[i] == 0)
-//        Console.Write(arr[i] + " ");
-      
-//}
+int[] arr = { 1, 0, 2, 0, 3 };
+int[] result = new int[arr.Length];
+int index = 0;
+ 
+for (int i = 0; i < arr.Length; i++)
+{
+    if (arr[i] == 0)
+    {
+        result[index++] = arr[i];
+    }
+}
+for (int i = 0; index < arr.Length; i++)
+{
+    if (arr[i] != 0)
+    {
+        result[index++] = arr[i];
+    }
+}
+   Console.WriteLine(result);  
 
 
